@@ -29,7 +29,7 @@ class Movable extends Sprite {
 
   /**
    * @method constructor
-   * @param  img         l'image
+   * @param  image         l'image
    * @param  x           la position X du pixel supérieur gauche
    * @param  y           la position Y du pixel supérieur gauche
    * @param  speed       la vitesse
@@ -68,19 +68,19 @@ class Movable extends Sprite {
   }
 
   /**
-   * Fonction s'activant quand la souris est relachée ou sortie du canvas, ou quand le doigt est relaché.
+   * Fonction s'activant quand la souris est relâchée ou sortie du canvas, ou quand le doigt est relâché.
    * Ne fonctionne pas avec le doigt sortant du canvas
    * @method _onMouseReleased
    * @param  e         l'event
    */
-  public static _onMouseReleased(): void {
+  public static _onMouseReleased(e): void {
     movables.forEach(obj => obj.setSelected(false));
   }
 
   /**
    * Fonction s'activant par le listener du mouvement de souris
    * Si le clic est activé et la souris est sur un objet Movable,
-   * l'objet se déplace. Si un objet est séléctionné, le prend pour le déplacer,
+   * l'objet se déplace. Si un objet est sélectionné, le prend pour le déplacer,
    * autrement recherche l'objet étant sous l'event et ayant le plus haut z_index
    * @method _onListenerActivated
    * @param  e        l'event

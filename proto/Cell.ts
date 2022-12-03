@@ -54,8 +54,8 @@ class Cell extends Sprite {
    */
   public update(x: number, y: number, progress: number): void {
     super.update(x, y, progress);
-    if (this.sprite && x && y) this.sprite.update(x+this.offsetX, y+this.offsetY, progress) 
-    else if (this.sprite) this.sprite.update(super.getX()+this.offsetX, super.getY()+this.offsetY, progress);
+    if (this.sprite && x && y) this.sprite.update(x + this.offsetX, y + this.offsetY, progress) 
+    else if (this.sprite) this.sprite.update(super.getX() + this.offsetX, super.getY() + this.offsetY, progress);
   }
 
   /**

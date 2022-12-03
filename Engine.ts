@@ -92,7 +92,7 @@ class Engine {
     }
 
     /**
-     * Nettoye l'affichage
+     * Nettoie l'affichage
      */
     public clear(): void {
         this.affichage.clear();

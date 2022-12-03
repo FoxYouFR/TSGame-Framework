@@ -19,7 +19,7 @@ class Pathfinder {
 
   /**
    * Initialise l'objet de recherche avec l'algorithme spécifié.
-   * Ne supporte que Aster, BFS et Dijkstra
+   * Ne supporte que A*, BFS et Dijkstra
    * @method initiateGridFinder
    * @param  algorithm l'algorithme à utiliser
    */
@@ -51,7 +51,7 @@ class Pathfinder {
     this.grid = new PF.Grid(width, height);
     for(let cell of cells) {
       if(cell.isWall()) {
-        this.grid.setWalkableAt(cell.getX()/cell.getSideX(), cell.getY()/cell.getSideY(), false);
+        this.grid.setWalkableAt(cell.getX() / cell.getSideX(), cell.getY() / cell.getSideY(), false);
       }
     }
   }
@@ -67,7 +67,7 @@ class Pathfinder {
   public runFinder(start: Cell, end: Cell): Array<Array<number>> {
     if(this.finder) {
       const savedGrid = this.grid.clone();
-      const path = this.finder.findPath(start.getX()/start.getSideX(), start.getY()/start.getSideX(), end.getX()/end.getSideX(), end.getY()/end.getSideY(), this.grid);
+      const path = this.finder.findPath(start.getX() / start.getSideX(), start.getY() / start.getSideX(), end.getX() / end.getSideX(), end.getY() / end.getSideY(), this.grid);
       this.grid = savedGrid;
       return path;
     }

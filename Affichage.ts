@@ -41,7 +41,7 @@ class Affichage {
   }
 
   /**
-   * Nettoye le canvas
+   * Nettoie le canvas
    * @method clear
    */
   public clear(): void {
@@ -65,7 +65,7 @@ class Affichage {
       }
     });
     non_movables.forEach(obj => obj.draw());
-    movables.sort((a, b) => a.z_index-b.z_index);
+    movables.sort((a, b) => a.z_index - b.z_index);
     movables.forEach(obj => obj.draw());
   }
 }

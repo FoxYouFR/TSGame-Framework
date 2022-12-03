@@ -3,13 +3,13 @@ import Log = require("./proto/Log");
 class Statistics {
   /** l'id de la statistique étant en jeu */
   private static idStats: number;
-  /** le degre actuel */
+  /** le degré actuel */
   private static degre: string;
 
   /**
    * Requête ajax pour sauvegarder une nouvelle ligne dans l'historique
    * @method addStats
-   * @param  mode     le mode de jeu (1: Entrainer, 2: Evaluer)
+   * @param  mode     le mode de jeu (1: Entrainer, 2: Évaluer)
    */
   public static addStats(mode: number) {
     $.ajax({

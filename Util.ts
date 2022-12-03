@@ -174,7 +174,7 @@ class Util {
   }
 
   /**
-   * Ajoute la méthode a appeler lorsque le mode de jeu ou le degre est modifié
+   * Ajoute la méthode a appeler lorsque le mode de jeu ou le degré est modifié
    * @method callOnGamemodeChange
    * @param  callback             la méthode à appelé
    */

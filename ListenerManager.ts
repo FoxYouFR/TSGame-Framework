@@ -121,7 +121,7 @@ class ListenerManager {
    * @method second_click_handler
    * @param  evt2                 l'event produit par le clic
    * @param  that                 la référence à this donné par le premier handler (sur lequel this est bind)
-   * @param  selectedObject       l'ancien objet qui a été appuyé
+   * @param  oldSelectedObject       l'ancien objet qui a été appuyé
    */
   private second_click_handler(evt2: any, that: any, oldSelectedObject: Sprite): void {
     this.jqueryCanvas.unbind(this.CLICK_EVENT);
