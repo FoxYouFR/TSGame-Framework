@@ -1,0 +1,22 @@
+{
+  "name": "framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pathfinding": "^0.4.18",
+    "pixi.js": "^4.8.5",
+    "sweetalert2": "^8.0.6"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.29",
+    "@types/pathfinding": "0.0.2",
+    "@types/pixi.js": "^4.8.6",
+    "ts-jsdoc": "^3.0.1"
+  }
+}

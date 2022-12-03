@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "amd",
+    "removeComments": true,
+    "outDir": "../compiled framework",
+    "target": "es5",
+    "watch": true
+  },
+  "compileOnSave": true,
+  "files": [
+    "Canvas.ts",
+    "Affichage.ts",
+    "proto/Cell.ts",
+    "proto/Sprite.ts",
+    "proto/Movable.ts",
+    "PixiFramework.ts",
+    "Structure.ts",
+    "ListenerManager.ts",
+    "Util.ts",
+    "Pathfinder.ts",
+    "Resources.ts",
+    "Gamemode.ts",
+    "Statistics.ts"
+  ]
+}
